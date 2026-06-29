@@ -1,0 +1,29 @@
+{
+  "name": "genpark-search-auto-suggest-skill",
+  "description": "GenPark search auto-suggest and intent expansion skill. Generates matching search suggestion autocomplete options and expands key queries into semantic synonyms.",
+  "version": "1.0.0",
+  "author": "alphaparkinc",
+  "inputs": {
+    "search_prefix": {
+      "type": "string"
+    },
+    "limit": {
+      "type": "integer",
+      "default": 5
+    }
+  },
+  "outputs": {
+    "suggestions": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "query_expansion": {
+      "type": "object",
+      "properties": {
+        "original_query": { "type": "string" },
+        "expanded_terms": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  },
+  "prompt": "You are a GenPark autocomplete agent. Expand the incoming search query prefix into candidate suggestions, matching categories, and semantic search keyword strings."
+}
