@@ -1,4 +1,4 @@
-# GenPark Search Autocomplete & Intent Expansion Skill
+# genpark-search-auto-suggest-skill
 
 This repository contains the **GenPark Search Autocomplete & Intent Expansion Skill** — an agent configuration skill config (`skill.json`), a production-ready Python SDK client (`suggest_agent.py`), and executable verification tests. It is designed to generate search autocomplete suggestions matching prefix constraints and map keywords to expanded synonym arrays.
 
