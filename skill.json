@@ -2,7 +2,7 @@
   "name": "genpark-search-auto-suggest-skill",
   "description": "GenPark search auto-suggest and intent expansion skill. Generates matching search suggestion autocomplete options and expands key queries into semantic synonyms.",
   "version": "1.0.0",
-  "author": "alphaparkinc",
+  "author": "genpark",
   "inputs": {
     "search_prefix": {
       "type": "string"
@@ -15,13 +15,22 @@
   "outputs": {
     "suggestions": {
       "type": "array",
-      "items": { "type": "string" }
+      "items": {
+        "type": "string"
+      }
     },
     "query_expansion": {
       "type": "object",
       "properties": {
-        "original_query": { "type": "string" },
-        "expanded_terms": { "type": "array", "items": { "type": "string" } }
+        "original_query": {
+          "type": "string"
+        },
+        "expanded_terms": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
       }
     }
   },
